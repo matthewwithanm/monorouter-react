@@ -23,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/matthewwithanm/monorouter-react/issues"
   },
-  "homepage": "https://github.com/matthewwithanm/monorouter-react"
+  "homepage": "https://github.com/matthewwithanm/monorouter-react",
+  "dependencies": {
+    "react": "*"
+  }
 }
