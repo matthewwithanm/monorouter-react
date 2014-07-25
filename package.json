@@ -1,0 +1,27 @@
+{
+  "name": "monorouter-react",
+  "version": "0.0.0",
+  "description": "React tools for monorouter",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "publishConfig": {
+    "registry": "http://npmregistry.hzdg.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/matthewwithanm/monorouter-react.git"
+  },
+  "keywords": [
+    "react",
+    "monorouter",
+    "router"
+  ],
+  "author": "Matthew Dapena-Tretter <m@tthewwithanm.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/matthewwithanm/monorouter-react/issues"
+  },
+  "homepage": "https://github.com/matthewwithanm/monorouter-react"
+}
