@@ -2,12 +2,15 @@ var engine = require('./lib/engine');
 var domCache = require('./lib/domCache');
 
 
-function extension(router) {
-  router.engine = extension.engine;
-  router.use(domCache());
-  return router;
+function makeExtension(opts) {
+  var extension = function(router) {
+    router.engine = extension.engine;
+    router.use(domCache());
+    return router;
+  };
+  extension.engine = engine;
+  return extension;
 }
 
-extension.engine = engine;
 
-module.exports = extension;
+module.exports = makeExtension;
