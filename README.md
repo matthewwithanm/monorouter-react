@@ -62,6 +62,9 @@ route handlers) which takes three arguments:
 - **`callback(err, data)`**: A function which will be invoked after the data is
   available.
 
+This middleware will also pass a prop to your view named `domCache` which you
+use to place the cache in your template.
+
 ```javascript
 var monorouter = require('monorouter');
 var domCache = require('monorouter-react/lib/domCache');
@@ -81,8 +84,15 @@ monorouter({engine: reactEngine})
     }, function(err, data) {
       // This function is called after the data is ready.
       if (err) return next(err);
-      this.render(function() {
-        return <div>The first person is {data.name}!</div>;
+      this.render(function(props) {
+        // Render a view using our loaded data. Don't forget to place the cache
+        // too!
+        return (
+          <div>
+            <h2>The first person is {data.name}!</h2>
+            {props.domCache()}
+          </div>
+        );
       });
     });
   });
