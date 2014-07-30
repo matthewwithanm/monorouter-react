@@ -12,5 +12,7 @@ function makeExtension(opts) {
   return extension;
 }
 
+makeExtension.engine = engine;
+makeExtension.domCache = domCache;
 
 module.exports = makeExtension;
