@@ -1,5 +1,6 @@
 var engine = require('./lib/engine');
 var domCache = require('./lib/domCache');
+var URLBuilder = require('./lib/URLBuilder');
 
 
 function makeExtension(opts) {
@@ -14,5 +15,6 @@ function makeExtension(opts) {
 
 makeExtension.engine = engine;
 makeExtension.domCache = domCache;
+makeExtension.URLBuilder = URLBuilder;
 
 module.exports = makeExtension;
