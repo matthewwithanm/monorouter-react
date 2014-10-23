@@ -22,7 +22,6 @@
   },
   "homepage": "https://github.com/matthewwithanm/monorouter-react",
   "dependencies": {
-    "xtend": "~3.0.0"
   },
   "peerDependencies": {
     "monorouter": "0.x",
