@@ -25,6 +25,6 @@
   },
   "peerDependencies": {
     "monorouter": "0.x",
-    "react": "*"
+    "react": "^0.12.0"
   }
 }
