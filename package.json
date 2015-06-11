@@ -4,7 +4,7 @@
   "description": "React tools for monorouter",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha 'lib/**/__tests__/**/*test*.js' --reporter min"
   },
   "repository": {
     "type": "git",
@@ -21,10 +21,13 @@
     "url": "https://github.com/matthewwithanm/monorouter-react/issues"
   },
   "homepage": "https://github.com/matthewwithanm/monorouter-react",
-  "dependencies": {
-  },
+  "dependencies": {},
   "peerDependencies": {
     "monorouter": "0.x",
     "react": "*"
+  },
+  "devDependencies": {
+    "chai": "^3.0.0",
+    "mocha": "^2.2.5"
   }
 }
